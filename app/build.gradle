@@ -1,0 +1,38 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'ru.tvlauncher.lite'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'ru.tvlauncher.lite'
+        minSdk 24          // Android 7.0 (Polarline 32PL13TC-SM)
+        targetSdk 34
+        versionCode 1
+        versionName '1.0'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            // подпись отладочным ключом, чтобы APK можно было сразу установить
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+}
+
+// Никаких зависимостей: только стандартный Android SDK.
+dependencies {
+}

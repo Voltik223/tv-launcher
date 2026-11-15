@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Лаунчер</string>
+    <string name="settings">Настройки</string>
+    <string name="err_launch">Не удалось запустить приложение</string>
+    <string name="err_settings">Не удалось открыть настройки</string>
+</resources>
